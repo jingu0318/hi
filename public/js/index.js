@@ -22,11 +22,12 @@ userNameElement.onclick = () =>{
 };
 
 
-const userEmailElement = document.querySelector('uesr-email');
+const userEmailElement = document.querySelector('.user-email');
 const localUserEmail = localStorage.getItem('userEmail');
+console.log(userEmailElement);
 
 if (localUserEmail) {
-  userEmailElement.innerHTML = `${localUserEmail}`;
+  userEmailElement.textContent = `${localUserEmail}`;
 }
 
 userEmailElement.onclick = () =>{
